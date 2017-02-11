@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2016, b3log.org & hacpai.com
+ * Copyright (c) 2010-2017, b3log.org & hacpai.com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@
 admin.about = {
     init: function() {
         $.ajax({
-            url: "http://rhythm.b3log.org/version/solo/latest/" + Label.version,
+            url: window.location.protocol + '://' + "rhythm.b3log.org/version/solo/latest/" + Label.version,
             type: "GET",
             cache: false,
             dataType: "jsonp",

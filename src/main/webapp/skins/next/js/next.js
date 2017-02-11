@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2016, b3log.org & hacpai.com
+ * Copyright (c) 2010-2017, b3log.org & hacpai.com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -99,7 +99,7 @@ var NexT = {
             $('.sidebar').prepend(articleTocHTML);
             var $sectionF = $('.sidebar section:first').html($('.b3-solo-list')),
                     $sectionL = $('.sidebar section:last');
-
+            $sectionF.height($(window).height() - 90);
             // 切换 tab
             $('.sidebar > ul > li').click(function () {
                 if ($(this).data('tab') === 'toc') {
